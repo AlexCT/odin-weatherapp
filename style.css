@@ -1,9 +1,46 @@
 /* Alex Tresselt 6-26-22 */
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 200px;
     height: 500px;
+    background-color: lightgray;
+    border: 5px solid navy;
+    border-radius: 10px;
+}
+
+#container > * {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: navy;
+}
+
+#city {
+    font-size: 24px;
+}
+
+#temp {
+    font-size: 36px;
+}
+
+#conditions {
+    font-size: 20px;
+}
+
+#locationbtn {
+    color: black;
+    margin-top: 10px;
+}
+
+#submitbtn {
+    margin-top: 10px;
+    color: black;
 }
