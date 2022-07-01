@@ -7,7 +7,7 @@ async function getWeather() {
 
     // Use Openweathermap's Geocoding API to translate city to lat/long coordinates
     const reply = await
-        fetch('http://api.openweathermap.org/geo/1.0/direct?q=' + loc + '&limit=1&appid=ecf75d04121014476b6bddba9c305734',
+        fetch('https://api.openweathermap.org/geo/1.0/direct?q=' + loc + '&limit=1&appid=ecf75d04121014476b6bddba9c305734',
         {mode: 'cors'});
     const cityData = await reply.json();
     let lat = cityData[0].lat;
